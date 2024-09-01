@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react';
 import './Hero.css';
 import { FaUserDoctor } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
-import hero_banner1 from '../../../assets/hero_banner/hero-banner1.jpg'
+import hero_banner1 from '../../../assets/hero_banner/hero_banner1.jpg'
 import hero_banner2 from '../../../assets/hero_banner/hero_banner2.jpg'
 import hero_banner3 from '../../../assets/hero_banner/hero_banner3.jpg'
+import hero_banner4 from '../../../assets/hero_banner/hero_banner4.jpg'
 
-const images = [hero_banner1, hero_banner2 , hero_banner3];
+const images = [hero_banner1, hero_banner2 , hero_banner3, hero_banner4];
 
 function Hero() {
     const [currentImage, setCurrentImage] = useState(0);
@@ -28,7 +29,6 @@ function Hero() {
         <p>Interventional Cardiovascular Specialist</p>
       </div>
     </div>
-    <div className='hero-overlay'></div>
     <div className="hero-image">
       {images.map((img, index) => (
         <img

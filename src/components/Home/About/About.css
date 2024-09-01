@@ -121,7 +121,7 @@
 
 @media (max-width: 690px) {
     .about-container {
-        margin-top: 650px;
+        margin-top: 520px;
     }
 
     .cards {
@@ -146,6 +146,12 @@
     }
 }
 
+@media (max-width: 500px) {
+    .about-container {
+        margin-top: 500px;
+    }
+}
+
 @media (max-width: 425px) {
     .cards {
         width: 80%;
@@ -162,12 +168,12 @@
 
 @media (max-width: 410px) {
     .about-container {
-        margin-top: 720px;
+        margin-top: 500px;
     }
 }
 
 @media (max-width: 320px) {
     .about-container {
-        margin-top: 780px;
+        margin-top: 600px;
     }
 }

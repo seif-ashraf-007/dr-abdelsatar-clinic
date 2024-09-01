@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './Info.css';
-import img1 from '../../../../assets/mentors/1.jpg';
-import img2 from '../../../../assets/mentors/2.jpg';
-import img3 from '../../../../assets/mentors/3.jpg';
-import img4 from '../../../../assets/mentors/4.jpg';
-import img5 from '../../../../assets/mentors/5.jpg';
-import img6 from '../../../../assets/mentors/6.jpg';
-import img7 from '../../../../assets/mentors/7.jpg';
-import img8 from '../../../../assets/mentors/8.jpg';
+import img1 from '../../../../assets/mentors/1.png';
+import img2 from '../../../../assets/mentors/2.png';
+import img3 from '../../../../assets/mentors/3.png';
+import img4 from '../../../../assets/mentors/4.png';
+import img5 from '../../../../assets/mentors/5.png';
+import img6 from '../../../../assets/mentors/6.png';
+import img7 from '../../../../assets/mentors/7.png';
+import img8 from '../../../../assets/mentors/8.png';
+import img9 from '../../../../assets/mentors/9.png';
+import img10 from '../../../../assets/mentors/10.png';
 
 import cert1 from '../../../../assets/certificates/1.jpg'
 import cert2 from '../../../../assets/certificates/2.jpg'
@@ -18,7 +20,7 @@ import cert6 from '../../../../assets/certificates/6.jpg'
 import cert7 from '../../../../assets/certificates/7.jpg'
 
 function Info() {
-  const mentorImages = [img1, img2, img3, img4, img5, img6, img7, img8];
+  const mentorImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
   const certificateImages = [cert1, cert2, cert3, cert4, cert5, cert6, cert7];
 
   const [currentMentorIndex, setCurrentMentorIndex] = useState(0);
