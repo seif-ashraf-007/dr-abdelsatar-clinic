@@ -61,7 +61,6 @@ function Info() {
             cardiovascular interventions, ensuring that every patient
             receives the highest standard of care.
           </p>
-          <button className='contact-btn'>Get in touch</button>
         </div>
         <div className="image-slider top-img">
           <div
@@ -101,7 +100,6 @@ function Info() {
             the most effective and innovative cardiovascular treatments,
             ensuring that my patients receive the best possible care.
           </p>
-          <button className='contact-btn'>Get in touch</button>
         </div>
       </section>
     </section>
