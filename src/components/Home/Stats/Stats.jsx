@@ -15,6 +15,10 @@ function Stats() {
             data: "548",
             title: "Cardiac Device Implantation"
         },
+        {
+            data: "10037",
+            title: "Heart Failure Patient Management"
+        },
     ]
 
     return (

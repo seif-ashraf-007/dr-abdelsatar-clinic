@@ -5,7 +5,7 @@ function About() {
   return (
 
     <>
-        <div className='about-container'>
+        <div className='about-container' id='about'>
             <div className='about-title'>
                 <h2>ABOUT</h2>
                 <h1>Leading the Way in Heart Health</h1>
@@ -19,7 +19,8 @@ function About() {
                     <div className='card-body'>
                         <div>
                         <h5>Comprehensive Heart Care</h5>
-                        <p>Our clinic offers extensive cardiovascular services, ranging from routine check-ups to advanced diagnostics. We focus on personalized care to ensure every patient gets the attention they deserve.</p>
+                        <p>Our clinic offers extensive cardiovascular services, ranging from routine check-ups to advanced diagnostics.
+                            We focus on personalized care to ensure every patient gets the attention they deserve.</p>
                         </div>
                     </div>
                 </div>
@@ -30,7 +31,8 @@ function About() {
                     <div className='card-body'>
                         <div>
                         <h5>Cutting-Edge Technology</h5>
-                        <p>We use the latest advancements in medical technology to provide precise diagnostics and effective treatments. Our state-of-the-art equipment ensures you receive the highest quality care available.</p>
+                        <p>We use the latest advancements in medical technology to provide precise diagnostics and effective treatments.
+                            Our state-of-the-art equipment ensures you receive the highest quality care available.</p>
                         </div>
                     </div>
                 </div>
@@ -41,7 +43,8 @@ function About() {
                 <div className='card-body'>
                         <div>
                         <h5>Patient-Centered Care</h5>
-                        <p>We believe in a holistic approach to cardiovascular health, keeping the patient at the core of everything we do. Our team collaborates with you to develop a plan tailored to your specific needs.</p>
+                        <p>We believe in a holistic approach to cardiovascular health, keeping the patient at the core of everything we do.
+                            Our team collaborates with you to develop a plan tailored to your specific needs.</p>
                         </div>
                     </div>
                 </div>

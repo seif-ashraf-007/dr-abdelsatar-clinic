@@ -43,7 +43,7 @@ function Info() {
   }, [certificateImages.length]);
 
   return (
-    <section className='info-container'>
+    <section className='info-container' id='certificates'>
       <section className="info-section">
         <div className="info-content">
           <h2 className="info-title">
@@ -75,7 +75,7 @@ function Info() {
         </div>
       </section>
 
-      <section className="info-section opposite-section">
+      <section className="info-section opposite-section" >
         <div className="image-slider">
           <div
             className="slider-container"

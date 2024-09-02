@@ -1,4 +1,3 @@
-import React from 'react'
 import './Footer.css'
 import logo from '../../../assets/logo_main.png'
 
@@ -17,15 +16,15 @@ function Footer() {
 
     <ul className="flex flex-wrap justify-center gap-6 mt-12 md:gap-8 lg:gap-12">
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> About </a>
+        <a className="text-gray-700 transition hover:text-gray-700/75" href="#about"> About </a>
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Certificates </a>
+        <a className="text-gray-700 transition hover:text-gray-700/75" href="#certificates"> Certificates </a>
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Services </a>
+        <a className="text-gray-700 transition hover:text-gray-700/75" href="#testmonials"> Testmonials </a>
       </li>
 
       <li>

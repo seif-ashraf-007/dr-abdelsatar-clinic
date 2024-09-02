@@ -21,7 +21,7 @@ export default function Testmonials () {
     ]
 
     return (
-        <section className="relative py-14">
+        <section className="relative py-14" id='testmonials'>
             <div className="relative z-10 max-w-screen-xl px-4 mx-auto md:px-8">
                 <div className="max-w-xl sm:text-center md:mx-auto">
                     <h3 className="text-3xl font-semibold text-gray-800 sm:text-4xl">

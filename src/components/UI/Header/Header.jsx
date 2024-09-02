@@ -34,9 +34,9 @@ function Header() {
         <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
           <ul className="flex items-center no-underline list-none gap-[1.8rem]">
             <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Home </a></li>
-            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Locations </a></li>
             <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#certificates"> Certificates </a></li>
-            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Testmonials </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#testmonials"> Testmonials </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Locations </a></li>
             <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Book </a></li>
           </ul>
         </nav>
@@ -70,9 +70,9 @@ function Header() {
       <nav className={`z-10 mobile-navbar ${isMenuOpen ? 'open' : 'closed'}`}>
         <ul className="flex flex-col items-center gap-4 no-underline list-none">
           <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#"> Home </a></li>
+          <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#certificates"> Certificates </a></li>
+          <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#testmonials"> Testmonials </a></li>
           <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#"> Locations </a></li>
-          <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#"> Certificates </a></li>
-          <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#"> Testmonials </a></li>
           <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#"> Book </a></li>
         </ul>
       </nav>
