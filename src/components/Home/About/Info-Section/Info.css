@@ -1,8 +1,13 @@
+:root {
+    --prm-clr: #2d3665;
+    --scnd-clr: #136c9d;
+}
+
 .info-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 200px 0;
+    margin: 200px 0 0 0;
     background-color: #f3f4f6;
     padding: 50px 0;
   }
@@ -40,10 +45,11 @@
   .contact-btn {
     margin-top: 40px;
     padding: 10px 20px;
-    background-color: #3E729A;
+    background-color: var(--scnd-clr);
     color: white;
     font-weight: 600;
     transition: 0.3s ease-in-out;
+    border-radius: 5px;
   }
 
   .contact-btn:hover {
@@ -69,19 +75,12 @@
     object-fit: cover;
   }
 
-  .info-section .image-slider {
-    border-top-left-radius: 60px;
-    overflow: hidden;
-  }
-
   .opposite-section {
     margin-top: 80px;
     margin-bottom: 0;
   }
 
   .opposite-section .image-slider {
-    border-top-left-radius: 0;
-    border-top-right-radius: 60px;
     overflow: hidden;
   }
 

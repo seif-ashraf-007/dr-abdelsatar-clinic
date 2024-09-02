@@ -1,4 +1,9 @@
 /* DESKTOP VIEW */
+:root {
+    --prm-clr: #2d3665;
+    --scnd-clr: #136c9d;
+}
+
 .about-container {
     margin: 140px auto 120px auto;
     max-width: 1200px;
@@ -46,7 +51,7 @@
 }
 
 .cards div {
-    background-color: #3E729A;
+    background-color: var(--scnd-clr);
     border-radius: 15px;
 }
 
@@ -60,17 +65,17 @@
 .cards div h2 {
     color: whitesmoke;
     font-weight: 600;
-    background-color: #294D6A;
+    background-color: var(--prm-clr);
     padding: 8px 3px 8px 14px;
     font-size: 22px;
 }
 
 .card-body h5 {
-    background-color: #3E729A;
+    background-color: var(--scnd-clr);
     margin-bottom: 12px;
 }
 .card-body p {
-    background-color: #3E729A;
+    background-color: var(--scnd-clr);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -174,6 +179,6 @@
 
 @media (max-width: 320px) {
     .about-container {
-        margin-top: 600px;
+        margin-top: 500px;
     }
 }

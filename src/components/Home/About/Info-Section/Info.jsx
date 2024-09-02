@@ -63,7 +63,7 @@ function Info() {
           </p>
           <button className='contact-btn'>Get in touch</button>
         </div>
-        <div className="image-slider">
+        <div className="image-slider top-img">
           <div
             className="slider-container"
             style={{ transform: `translateX(-${currentMentorIndex * 100}%)` }}

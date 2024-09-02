@@ -1,4 +1,9 @@
 /* Navbar for larger screens */
+:root {
+    --prm-clr: #2d3665;
+    --scnd-clr: #136c9d;
+}
+
 .navbar {
     display: flex;
 }

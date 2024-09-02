@@ -33,11 +33,11 @@ function Header() {
         {/* Regular Navbar (Visible on larger screens) */}
         <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
           <ul className="flex items-center no-underline list-none gap-[1.8rem]">
-            <li><a className="text-black hover:text-[#3E729A] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Home </a></li>
-            <li><a className="text-black hover:text-[#3E729A] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Locations </a></li>
-            <li><a className="text-black hover:text-[#3E729A] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Certificates </a></li>
-            <li><a className="text-black hover:text-[#3E729A] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Testmonials </a></li>
-            <li><a className="text-black hover:text-[#3E729A] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Book </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Home </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Locations </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#certificates"> Certificates </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Testmonials </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Book </a></li>
           </ul>
         </nav>
 
@@ -46,21 +46,21 @@ function Header() {
           <div className="flex items-center lang-btn">
             <span
               onClick={toggleLanguage}
-              className="cursor-pointer text-[#3E729A] text-[0.875rem] mr-2"
+              className="cursor-pointer text-[#136c9d] text-[0.875rem] mr-2"
             >
               {language}
             </span>
             <button onClick={toggleLanguage} className="bg-transparent border-none cursor-pointer">
-              <i className="fa-solid fa-globe text-[#3E729A]"></i>
+              <i className="fa-solid fa-globe text-[#136c9d]"></i>
             </button>
           </div>
 
           {/* Mobile Menu Toggle */}
           <div className="z-10 hidden mr-3 text-xl mobile-menu-btn">
             {isMenuOpen ? (
-              <IoCloseOutline onClick={toggleMenu} className="text-[#3E729A] cursor-pointer" />
+              <IoCloseOutline onClick={toggleMenu} className="text-[#136c9d] cursor-pointer" />
             ) : (
-              <FaBars onClick={toggleMenu} className="text-[#3E729A] cursor-pointer" />
+              <FaBars onClick={toggleMenu} className="text-[#136c9d] cursor-pointer" />
             )}
           </div>
         </div>
