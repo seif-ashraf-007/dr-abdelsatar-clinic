@@ -72,8 +72,8 @@ function Header() {
           <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#"> Home </a></li>
           <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#certificates"> Certificates </a></li>
           <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#testmonials"> Testmonials </a></li>
-          <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#"> Locations </a></li>
-          <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#"> Book </a></li>
+          <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="/locations"> Locations </a></li>
+          <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="/book"> Book </a></li>
         </ul>
       </nav>
     </header>
