@@ -225,13 +225,13 @@ html, body {
     font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
-.icon {
+.info-icon {
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
-.info-text p .warn {
+.warn {
     color: var(--scnd-clr);
 }
 

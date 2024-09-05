@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import { IoLocationOutline, IoCallOutline, IoHomeOutline } from "react-icons/io5";
 import { CiClock2 } from "react-icons/ci";
-import { PiWarningCircleBold } from "react-icons/pi";
 import { RiVidiconLine } from "react-icons/ri";
 import { GiElectric } from "react-icons/gi";
 import { MdOutlineHealthAndSafety, MdMoreTime, MdMonitorHeart } from "react-icons/md";
@@ -12,6 +11,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { RiErrorWarningLine } from "react-icons/ri";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClockFour } from "@fortawesome/free-solid-svg-icons";
 
 function Locations() {
     const [selectedLocation, setSelectedLocation] = useState('location1');
@@ -118,22 +119,22 @@ function Locations() {
                                 {selectedLocation === 'location1' && (
                                     <div className="info-text">
                                         <h2>Kafr Shukr, Qalyubia</h2>
-                                        <p><IoLocationOutline className='icon' /> Kayan Specialized Hospital - Mansoura-Banha Road - Esnyet - Next to Al-Sharawy Mosque</p>
-                                        <p><IoCallOutline className='icon' /> +201143818340, +201129191970, +201143818304</p>
-                                        <p><CiClock2 className='icon' /> Daily at 9 PM except Wednesdays</p>
-                                        <p><PiWarningCircleBold className='icon warn' /> Please follow up with the clinic secretary on Sunday for possible delays due to surgeries</p>
+                                        <p><i className="lni lni-map-marker info-icon"></i> Kayan Specialized Hospital - Mansoura-Banha Road - Esnyet - Next to Al-Sharawy Mosque</p>
+                                        <p><i className="lni lni-phone info-icon"></i>+201143818340, +201129191970, +201143818304</p>
+                                        <p><FontAwesomeIcon icon={faClockFour} className='info-icon' /> Daily at 9 PM except Wednesdays</p>
+                                        <p><i className="lni lni-popup info-icon warn"></i> Please follow up with the clinic secretary on Sunday for possible delays due to surgeries</p>
                                         <hr className='divider'/>
                                         <div className="info-note">
                                             <h5>Cardiac Ultrasound Clinic</h5>
                                             <h6>Prof. Dr. Hamada Khater Radiology Center</h6>
                                             <p className='paragprah'>Available daily except Wednesdays with a prior reservation</p>
-                                            <p><TbDeviceLandlinePhone className='icon' /> 0132517017</p>
+                                            <p><TbDeviceLandlinePhone className='info-icon' /> 0132517017</p>
                                         </div>
                                         <hr className='divider'/>
                                         <div className="start-bar">
                                             <div className="dirc">
                                                 <p className='dir-p'>
-                                                    <CiLocationArrow1 className='icon'/> <a href='https://maps.app.goo.gl/weXXKKRKYs45hbQE8' target='_blank' className='directions'>
+                                                    <CiLocationArrow1 className='info-icon'/> <a href='https://maps.app.goo.gl/weXXKKRKYs45hbQE8' target='_blank' className='directions'>
                                                     Get Directions
                                                     </a>
                                                 </p>
@@ -141,7 +142,7 @@ function Locations() {
 
                                             <div className="call">
                                                 <p className='dir-p'>
-                                                    <IoCallOutline className='icon' />
+                                                    <IoCallOutline className='info-icon' />
                                                     <a href="tel:+201110767434" className='call-p'>
                                                         Contact Secretary
                                                     </a>
@@ -160,15 +161,15 @@ function Locations() {
                                 {selectedLocation === 'location3' && (
                                     <div className="info-text" >
                                         <h2>Nile Corniche, Cairo</h2>
-                                        <p><IoLocationOutline className='icon' /> 12 Agha Khan Towers - Next to Nasser Institute - In front of McDonald&apos;s and La Poire</p>
-                                        <p><IoCallOutline  className='icon' /> +201006730022</p>
-                                        <p><CiClock2 className='icon' /> Sunday, Tuesday, and Thursday - From 3 PM</p>
-                                        <p><RiErrorWarningLine  className='icon warn' /> Please follow up with the clinic secretary on Sunday for possible delays due to surgeries</p>
+                                        <p><i className="lni lni-map-marker info-icon"></i> 12 Agha Khan Towers - Next to Nasser Institute - In front of McDonald&apos;s and La Poire</p>
+                                        <p><i className="lni lni-phone info-icon"></i> +201006730022</p>
+                                        <p><FontAwesomeIcon icon={faClockFour} className='info-icon' /> Sunday, Tuesday, and Thursday - From 3 PM</p>
+                                        <p><i className="lni lni-popup info-icon warn"></i> Please follow up with the clinic secretary on Sunday for possible delays due to surgeries</p>
                                         <hr className='divider'/>
                                         <div className="start-bar">
                                             <div className="dirc">
                                                 <p className='dir-p'>
-                                                    <CiLocationArrow1 className='icon'/> <a href='https://maps.app.goo.gl/DaQ29Heta2su88V68' target='_blank' className='directions'>
+                                                    <CiLocationArrow1 className='info-icon'/> <a href='https://maps.app.goo.gl/DaQ29Heta2su88V68' target='_blank' className='directions'>
                                                     Get Directions
                                                     </a>
                                                 </p>
@@ -176,7 +177,7 @@ function Locations() {
 
                                             <div className="call">
                                                 <p className='dir-p'>
-                                                    <IoCallOutline className='icon' />
+                                                    <IoCallOutline className='info-icon' />
                                                     <a href="tel:+201110767434" className='call-p'>
                                                         Contact Secretary
                                                     </a>
