@@ -1,7 +1,7 @@
 import { useState } from "react";
-import CountUp from "react-countup"
+import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
-import './Stats.css'
+import './Stats.css';
 
 function Stats() {
     const [counterState, setCounterState] = useState(false);
@@ -19,7 +19,7 @@ function Stats() {
             data: "10037",
             title: "Heart Failure Patient Management"
         },
-    ]
+    ];
 
     return (
         <section className="stats-section">
@@ -49,7 +49,7 @@ function Stats() {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
-export default Stats
+export default Stats;

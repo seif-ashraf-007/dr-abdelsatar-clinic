@@ -25,7 +25,7 @@ function Header() {
     <header className="bg-white">
       <div className="max-w-[100%] m-[0 auto] p-[0 1rem] flex h-[4rem] justify-around items-center header-container">
         <div>
-          <a href="#">
+          <a href="/">
             <img src={logo} className='h-[4rem] logo-img' alt="Logo" />
           </a>
         </div>
@@ -33,11 +33,11 @@ function Header() {
         {/* Regular Navbar (Visible on larger screens) */}
         <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
           <ul className="flex items-center no-underline list-none gap-[1.8rem]">
-            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Home </a></li>
-            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#certificates"> Certificates </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="/"> Home </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="/#certificates"> Certificates </a></li>
             <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#testmonials"> Testmonials </a></li>
-            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Locations </a></li>
-            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#"> Book </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="/locations"> Locations </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="/book"> Book </a></li>
           </ul>
         </nav>
 

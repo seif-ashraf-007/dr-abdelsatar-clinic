@@ -1,16 +1,22 @@
-import About from "./components/Home/About/About"
-import Hero from "./components/Home/Hero/Hero"
-import Stats from "./components/Home/Stats/Stats"
-import Testmonials from "./components/Home/Testmonials/Testmonials"
+import Home from './pages/HomePage/HomePage'
+import Locations from './pages/LocationsPage/LocationsPage'
+import Book from './pages/BookPage/Book'
+
+import Header from './components/UI/Header/Header'
+import Footer from './components/UI/Footer/Footer'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
     return (
-    <>
-        <Hero />
-        <About />
-        <Stats />
-        <Testmonials />
-    </>
+    <Router>
+        <Header />
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/locations' element={<Locations />} />
+                <Route path='/book' element={<Book />} />
+            </Routes>
+        <Footer />
+    </Router>
   )
 }
 

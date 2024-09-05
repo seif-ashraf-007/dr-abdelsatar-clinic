@@ -28,7 +28,7 @@ function Footer() {
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Book </a>
+        <a className="text-gray-700 transition hover:text-gray-700/75" href="/book"> Book </a>
       </li>
     </ul>
 
