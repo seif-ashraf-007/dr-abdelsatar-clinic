@@ -66,7 +66,7 @@ html, body {
 }
 
 .divider {
-    margin: 15px 0;
+    margin: 15px 10px;
     border-color: var(--scnd-clr);
     opacity: 20%;
 }
@@ -102,10 +102,11 @@ html, body {
 
 .tele .subtitle, .home .subtitle {
     font-size: 20px;
+    margin-top: 12px;
 }
 
 .tele .sub-paragraph, .home .sub-paragraph {
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
 /* Section Icons */
@@ -172,7 +173,7 @@ html, body {
     border-color: transparent;
 }
 
-/* Location Info */
+/* ` Info */
 .location-info {
     display: flex;
     flex-direction: column;
@@ -197,13 +198,18 @@ html, body {
     font-weight: 600;
 }
 
+.info-note {
+    margin: 0 10px;
+}
+
 .info-note .paragprah {
     color: var(--scnd-clr);
 }
 
 .info-text {
     width: 100%;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .info-text h2 {
@@ -219,14 +225,41 @@ html, body {
     font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
-.info-text p .icon {
+.icon {
     margin-left: 10px;
     margin-right: 10px;
-    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-size: 1.4rem;
 }
 
 .info-text p .warn {
     color: var(--scnd-clr);
+}
+
+.directions, .call-p {
+    color: var(--scnd-clr);
+    transition: 0.3s ease-in-out;
+}
+
+.directions:hover, .dir-p:hover {
+    color: black;
+}
+
+.dir-p {
+    transition: 0.3s ease-in-out;
+}
+
+.dir-p:hover {
+    color: black;
+}
+
+.start-bar {
+    display: flex;
+}
+
+.call {
+    display: flex;
+    margin: 0 20px;
+    align-items: center;
 }
 
 /* Map Styling */
@@ -341,7 +374,7 @@ link-span:hover {
     }
 
     .tele h1, .home h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .tele .subtitle, .home .subtitle {
@@ -354,7 +387,7 @@ link-span:hover {
 
     .section-icon {
         margin-right: 10px;
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .contact-icons {

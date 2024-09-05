@@ -10,8 +10,8 @@ import { MdOutlineHealthAndSafety, MdMoreTime, MdMonitorHeart } from "react-icon
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-
-
+import { CiLocationArrow1 } from "react-icons/ci";
+import { RiErrorWarningLine } from "react-icons/ri";
 
 function Locations() {
     const [selectedLocation, setSelectedLocation] = useState('location1');
@@ -25,7 +25,7 @@ function Locations() {
             service <span className='cus-span'>(Telemedicine)</span>.
         </p>
         <p className='sub-paragraph'>
-            Our services include clinical examination, ECG, and echocardiography.
+            Our services include <span className='cus-span'> Remote Cardiac Consultation</span>.
             Telemedicine is an approved method by the <a href="https://www.heart.org/en/professional/telehealth" target='_blank'>
             <span className='cus-span link-span'>American Heart Association</span></a> to help
             you follow your treatment plan.
@@ -66,8 +66,12 @@ function Locations() {
                     <div className="content">
                         <div className="title">Locations</div>
                         <div className="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illo impedit voluptatum
-                            cupiditate asperiores iusto sapiente nesciunt corporis tenetur rerum!
+                        Dr. Abdelsattar Ahmed Nasr is a renowned cardiologist based in Cairo, w
+                        orking at Mokattam Hospital HIO, which is a tertiary center for cardiology,
+                        and at his clinic located on the Nile Corniche in Roud Elfarag.
+                        Recently, he has also started offering his specialized cardiac
+                        care services in his hometown in the Delta region,
+                        ensuring more communities have access to top-quality care.
                         </div>
                     </div>
 
@@ -94,13 +98,13 @@ function Locations() {
                             className={`location-button ${selectedLocation === 'location1' ? 'active' : ''}`}
                             onClick={() => setSelectedLocation('location1')}
                         >
-                            كفر شكر, القليوبية
+                            Kafr Shukr, Qalyubia
                         </button>
                         <button
                             className={`location-button ${selectedLocation === 'location3' ? 'active' : ''}`}
                             onClick={() => setSelectedLocation('location3')}
                         >
-                            كورنيش النيل, القاهرة
+                            Nile Corniche, Cairo
                         </button>
                     </div>
 
@@ -112,19 +116,39 @@ function Locations() {
                         >
                             <div className="location-info">
                                 {selectedLocation === 'location1' && (
-                                    <div className="info-text" dir='rtl'>
-                                        <h2>كفر شكر, القليوبية</h2>
-                                        <p><IoLocationOutline className='icon' /> مستشفى كيان التخصصي - طريق المنصورة بنها - اسنيت - بجوار مسجد الشعراوي</p>
-                                        <p><IoCallOutline className='icon' /> 201143818340+</p>
-                                        <p><CiClock2 className='icon' /> يوميا ٩ مساء ما عدا الأربعاء</p>
-                                        <p><PiWarningCircleBold className='icon warn' /> ‎مع مراعاة المتابعة مع سكرتيرة العيادة يوم الاحد لاحتمالية تأخير العيادة نظرا لعمليات الطبيب</p>
+                                    <div className="info-text">
+                                        <h2>Kafr Shukr, Qalyubia</h2>
+                                        <p><IoLocationOutline className='icon' /> Kayan Specialized Hospital - Mansoura-Banha Road - Esnyet - Next to Al-Sharawy Mosque</p>
+                                        <p><IoCallOutline className='icon' /> +201143818340, +201129191970, +201143818304</p>
+                                        <p><CiClock2 className='icon' /> Daily at 9 PM except Wednesdays</p>
+                                        <p><PiWarningCircleBold className='icon warn' /> Please follow up with the clinic secretary on Sunday for possible delays due to surgeries</p>
                                         <hr className='divider'/>
                                         <div className="info-note">
-                                            <h5>عيادة الموجات الصوتية على القلب</h5>
-                                            <h6>مركز أ. د. حمادة خاطر للأشعة</h6>
-                                            <p className='paragprah'>متواجد يومياً ما عدا الأربعاء بحجز مسبق</p>
+                                            <h5>Cardiac Ultrasound Clinic</h5>
+                                            <h6>Prof. Dr. Hamada Khater Radiology Center</h6>
+                                            <p className='paragprah'>Available daily except Wednesdays with a prior reservation</p>
                                             <p><TbDeviceLandlinePhone className='icon' /> 0132517017</p>
                                         </div>
+                                        <hr className='divider'/>
+                                        <div className="start-bar">
+                                            <div className="dirc">
+                                                <p className='dir-p'>
+                                                    <CiLocationArrow1 className='icon'/> <a href='https://maps.app.goo.gl/weXXKKRKYs45hbQE8' target='_blank' className='directions'>
+                                                    Get Directions
+                                                    </a>
+                                                </p>
+                                            </div>
+
+                                            <div className="call">
+                                                <p className='dir-p'>
+                                                    <IoCallOutline className='icon' />
+                                                    <a href="tel:+201110767434" className='call-p'>
+                                                        Contact Secretary
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 )}
 
@@ -134,12 +158,31 @@ function Locations() {
 
 
                                 {selectedLocation === 'location3' && (
-                                    <div className="info-text" dir='rtl'>
-                                        <h2>كورنيش النيل, القاهرة</h2>
-                                        <p><IoLocationOutline className='icon' /> ‎١٢ أبراج أغاخان - بجوار معهد ناصر - أمام ماكدونالدز ولابوار</p>
-                                        <p><IoCallOutline  className='icon' /> 201006730022+</p>
-                                        <p><CiClock2 className='icon' /> أحد وثلاثاء وخميس - من الساعة 3 مساء</p>
-                                        <p><PiWarningCircleBold className='icon warn' /> ‎مع مراعاة المتابعة مع سكرتيرة العيادة</p>
+                                    <div className="info-text" >
+                                        <h2>Nile Corniche, Cairo</h2>
+                                        <p><IoLocationOutline className='icon' /> 12 Agha Khan Towers - Next to Nasser Institute - In front of McDonald&apos;s and La Poire</p>
+                                        <p><IoCallOutline  className='icon' /> +201006730022</p>
+                                        <p><CiClock2 className='icon' /> Sunday, Tuesday, and Thursday - From 3 PM</p>
+                                        <p><RiErrorWarningLine  className='icon warn' /> Please follow up with the clinic secretary on Sunday for possible delays due to surgeries</p>
+                                        <hr className='divider'/>
+                                        <div className="start-bar">
+                                            <div className="dirc">
+                                                <p className='dir-p'>
+                                                    <CiLocationArrow1 className='icon'/> <a href='https://maps.app.goo.gl/DaQ29Heta2su88V68' target='_blank' className='directions'>
+                                                    Get Directions
+                                                    </a>
+                                                </p>
+                                            </div>
+
+                                            <div className="call">
+                                                <p className='dir-p'>
+                                                    <IoCallOutline className='icon' />
+                                                    <a href="tel:+201110767434" className='call-p'>
+                                                        Contact Secretary
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 )}
 
