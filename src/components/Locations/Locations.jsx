@@ -1,8 +1,7 @@
 import './Locations.css';
 import { useState } from 'react';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
-import { IoLocationOutline, IoCallOutline, IoHomeOutline } from "react-icons/io5";
-import { CiClock2 } from "react-icons/ci";
+import { IoCallOutline, IoHomeOutline } from "react-icons/io5";
 import { RiVidiconLine } from "react-icons/ri";
 import { GiElectric } from "react-icons/gi";
 import { MdOutlineHealthAndSafety, MdMoreTime, MdMonitorHeart } from "react-icons/md";
@@ -10,7 +9,6 @@ import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { CiLocationArrow1 } from "react-icons/ci";
-import { RiErrorWarningLine } from "react-icons/ri";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClockFour } from "@fortawesome/free-solid-svg-icons";
 

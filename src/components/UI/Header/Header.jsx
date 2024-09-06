@@ -37,7 +37,7 @@ function Header() {
             <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="/#certificates"> Certificates </a></li>
             <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="#testmonials"> Testmonials </a></li>
             <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="/locations"> Locations </a></li>
-            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="/book"> Book </a></li>
+            <li><a className="text-black hover:text-[#136c9d] text-[1.1rem] transition duration-[0.3s] no-underline" href="/blog"> Blog </a></li>
           </ul>
         </nav>
 
@@ -73,7 +73,7 @@ function Header() {
           <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#certificates"> Certificates </a></li>
           <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="#testmonials"> Testmonials </a></li>
           <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="/locations"> Locations </a></li>
-          <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="/book"> Book </a></li>
+          <li><a className="text-black text-[0.875rem] transition duration-[0.3s] no-underline" href="/blog"> Blog </a></li>
         </ul>
       </nav>
     </header>

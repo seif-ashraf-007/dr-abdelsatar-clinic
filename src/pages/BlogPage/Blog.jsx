@@ -1,9 +1,9 @@
-import Book from '../../components/Book/Book'
+import Blog from '../../components/Blog/Blog'
 
 function BookPage() {
   return (
     <>
-        <Book />
+        <Blog />
     </>
   )
 }

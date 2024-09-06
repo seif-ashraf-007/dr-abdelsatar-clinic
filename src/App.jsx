@@ -1,6 +1,6 @@
 import Home from './pages/HomePage/HomePage'
 import Locations from './pages/LocationsPage/LocationsPage'
-import Book from './pages/BookPage/Book'
+import Blog from './pages/BlogPage/Blog'
 
 import Header from './components/UI/Header/Header'
 import Footer from './components/UI/Footer/Footer'
@@ -13,7 +13,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/locations' element={<Locations />} />
-                <Route path='/book' element={<Book />} />
+                <Route path='/blog' element={<Blog />} />
             </Routes>
         <Footer />
     </Router>
